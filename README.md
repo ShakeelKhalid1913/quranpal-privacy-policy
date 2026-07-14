@@ -60,7 +60,7 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 ## Contact Us
 
 If you have any questions about this Privacy Policy, you can contact us:
-- By email: shakeelkhalid786@gmail.com
+- By email: programmer191370070@gmail.com
 
 ## Your Rights
 
