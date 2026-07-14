@@ -14,13 +14,13 @@
             color: #333;
         }
         h1 {
-            color: #1e88e5;
+            color: #004D40;
             text-align: center;
-            border-bottom: 2px solid #1e88e5;
+            border-bottom: 2px solid #C9A227;
             padding-bottom: 10px;
         }
         h2 {
-            color: #1976d2;
+            color: #004D40;
             margin-top: 30px;
         }
         .section {
@@ -31,107 +31,130 @@
             color: #666;
             font-style: italic;
         }
+        a {
+            color: #004D40;
+        }
     </style>
 </head>
 <body>
     <h1>QuranPal Privacy Policy</h1>
-    <p class="last-updated">Last updated: May 3, 2025</p>
+    <p class="last-updated">Last updated: July 14, 2026</p>
 
     <div class="section">
         <h2>Introduction</h2>
-        <p>Welcome to QuranPal ("we," "our," or "us"). We respect your privacy and are committed to protecting any data that we must collect. This privacy policy explains what information we collect, how we use it, and what rights you have in relation to it.</p>
+        <p>QuranPal ("we", "our", or "us") is a Quran reading and listening app. This policy explains what information the app collects, how it is used, and what choices you have. By using QuranPal, you agree to this policy.</p>
     </div>
 
     <div class="section">
         <h2>Information We Collect</h2>
-        <p>We collect minimal information necessary to provide you with a seamless Quran reading and listening experience:</p>
+
+        <h3>Account information (optional)</h3>
+        <p>If you sign in, we use <strong>Firebase Authentication</strong> to create and manage your account. Depending on how you sign in, this may include:</p>
         <ul>
-            <li><strong>User Preferences</strong>: We store your app preferences locally on your device, including:
-                <ul>
-                    <li>Theme preferences (Light/Dark mode)</li>
-                    <li>Reading settings</li>
-                    <li>Selected language</li>
-                    <li>Audio playback settings</li>
-                </ul>
-            </li>
-            <li><strong>Firebase Services</strong>: We use Firebase for app functionality, which may collect:
-                <ul>
-                    <li>Basic usage statistics</li>
-                    <li>App performance data</li>
-                    <li>Crash reports</li>
-                </ul>
-            </li>
+            <li>Email address</li>
+            <li>Display name</li>
+            <li>Account provider (email/password, Google, or Apple)</li>
+            <li>A unique user ID assigned by Firebase</li>
         </ul>
+
+        <h3>Data you create in the app</h3>
+        <p>When you are signed in, the following may be stored on your device and synced to <strong>Google Cloud Firestore</strong> under your account so you can restore it on another device:</p>
+        <ul>
+            <li>Quran reading progress (main goal, side reading)</li>
+            <li>Bookmarks and bookmark folders</li>
+            <li>Liked verses</li>
+            <li>Prayer tracking logs (which prayers you marked as completed, by date)</li>
+        </ul>
+
+        <h3>Data stored only on your device</h3>
+        <p>Some settings and progress stay locally on your phone using <strong>SharedPreferences</strong>, including:</p>
+        <ul>
+            <li>Theme and reading view preferences</li>
+            <li>Selected translations, tafsir, and reciter</li>
+            <li>Audio playback position (listen tab)</li>
+            <li>Night recitation and event reading progress</li>
+            <li>Cached prayer times</li>
+            <li>Prayer calculation method and madhab (school) settings</li>
+            <li>Onboarding completion state</li>
+        </ul>
+        <p>If you are not signed in, prayer logs and reading progress remain on your device only.</p>
+
+        <h3>Location (optional)</h3>
+        <p>If you allow location access, QuranPal uses your coordinates to fetch prayer times from the <strong>Aladhan</strong> API. We store latitude, longitude, and city name locally on your device to show times and cache results. We do not sell location data.</p>
+
+        <h3>Technical and service data</h3>
+        <p>Firebase and our hosting providers may process standard technical data needed to run the app (for example device type, app version, and error logs). We use Firebase Auth and Cloud Firestore to provide sign-in and sync.</p>
     </div>
 
     <div class="section">
         <h2>How We Use Your Information</h2>
-        <p>The information we collect is used solely for:</p>
         <ul>
-            <li>Providing core app functionality</li>
-            <li>Saving your preferences locally</li>
-            <li>Improving app performance and stability</li>
-            <li>Enhancing user experience</li>
+            <li>Provide Quran reading, listening, bookmarks, and prayer features</li>
+            <li>Sync your progress and saved content when you are signed in</li>
+            <li>Calculate and display prayer times for your area</li>
+            <li>Maintain app security and fix bugs</li>
         </ul>
+        <p>We do not use your data for advertising or sell your personal information.</p>
     </div>
 
     <div class="section">
-        <h2>Information Storage</h2>
-        <p>We store your preferences locally on your device using SharedPreferences. We do not:</p>
+        <h2>Third-Party Services</h2>
+        <p>QuranPal relies on these services to function:</p>
         <ul>
-            <li>Store personal information on external servers</li>
-            <li>Share your data with third parties</li>
-            <li>Use your information for marketing purposes</li>
+            <li><strong>Firebase</strong> (Google) — authentication and cloud database</li>
+            <li><strong>Aladhan API</strong> — prayer time calculations</li>
+            <li><strong>EveryAyah / MP3Quran</strong> — streaming Quran audio</li>
+            <li><strong>Google Sign-In / Sign in with Apple</strong> — optional login</li>
         </ul>
+        <p>Each provider has its own privacy policy governing how they handle data.</p>
+    </div>
+
+    <div class="section">
+        <h2>Donations</h2>
+        <p>QuranPal is free. Optional tips are processed by third-party payment providers (for example PayPal) when you choose to support the app. We do not collect or store your payment card details in QuranPal.</p>
     </div>
 
     <div class="section">
         <h2>Internet Access</h2>
-        <p>QuranPal requires internet access for:</p>
-        <ul>
-            <li>Streaming Quran recitations</li>
-            <li>Firebase services functionality</li>
-            <li>App performance monitoring</li>
-        </ul>
+        <p>The app needs internet access to stream audio, sync signed-in data, sign in, and load prayer times. Bundled Quran text and translations are stored in the app; some tafsir content may require a network connection.</p>
     </div>
 
     <div class="section">
-        <h2>Data Security</h2>
-        <p>We implement appropriate technical and organizational security measures to protect your information. Your preferences are securely stored on your device and are not accessible to other applications.</p>
+        <h2>Data Retention and Deletion</h2>
+        <ul>
+            <li>Local data is removed when you uninstall the app.</li>
+            <li>Cloud data tied to your account remains until you delete it or delete your Firebase account.</li>
+            <li>You can sign out at any time from Profile settings.</li>
+        </ul>
+        <p>To request deletion of cloud data associated with your account, email us at <a href="mailto:shakeelkhalid786@gmail.com">shakeelkhalid786@gmail.com</a>.</p>
     </div>
 
     <div class="section">
         <h2>Children's Privacy</h2>
-        <p>Our app is suitable for users of all ages and does not collect personal information from children or any other users.</p>
-    </div>
-
-    <div class="section">
-        <h2>Changes to Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
-    </div>
-
-    <div class="section">
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, you can contact us:</p>
-        <ul>
-            <li>By email: shakeelkhalid786@gmail.com</li>
-        </ul>
+        <p>QuranPal is suitable for all ages. We do not knowingly collect more information from children than is needed to use the app's features. If you believe a child has provided personal data without appropriate consent, contact us and we will take steps to delete it.</p>
     </div>
 
     <div class="section">
         <h2>Your Rights</h2>
-        <p>You have the right to:</p>
+        <p>Depending on where you live, you may have the right to access, correct, or delete personal data we hold about you. Contact us using the email below to make a request.</p>
+    </div>
+
+    <div class="section">
+        <h2>Changes to This Policy</h2>
+        <p>We may update this policy from time to time. We will post the new version on this page and update the "Last updated" date.</p>
+    </div>
+
+    <div class="section">
+        <h2>Contact Us</h2>
+        <p>Questions about this privacy policy:</p>
         <ul>
-            <li>Access your stored preferences</li>
-            <li>Delete your local data by uninstalling the app</li>
-            <li>Opt-out of Firebase analytics</li>
-            <li>Request information about your data</li>
+            <li>Email: <a href="mailto:shakeelkhalid786@gmail.com">shakeelkhalid786@gmail.com</a></li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>Open Source Attribution</h2>
-        <p>QuranPal uses open-source Quran texts and recitations that are freely available for public use. We respect and adhere to the terms of use of all third-party content.</p>
+        <h2>Quran Content</h2>
+        <p>QuranPal uses publicly available Quran texts, translations, tafsir catalogs, and recitation audio from third-party sources. We respect the terms of use of all content providers.</p>
     </div>
 </body>
 </html>
